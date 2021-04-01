@@ -1,0 +1,135 @@
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+
+main {
+  width: 70vw;
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  row-gap: 20px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.first-div {
+  color: var(--VeryDarkMagenta);
+  padding-right: 50px; 
+}
+
+.first-div__title {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.first-div__description {
+  color: var(--VeryDarkMagenta);
+  line-height: 1.6;
+}
+
+.ratings {
+    padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.rating {
+  background-color: var(--LightGrayishMagenta);
+  border-radius: 8px;
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.rating__star {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.rating__1 {
+    margin-right: 80px;
+}
+
+.rating__2 {
+    margin: 0 40px;
+}
+
+.rating__3 {
+    margin-left: 80px;
+}
+
+.rating__text {
+  margin-left: 20px;
+}
+
+section {
+  display: flex;
+  column-gap: 15px;
+}
+
+.card {
+  background-color: var(--VeryDarkMagenta);
+  color: var(--LightGrayishMagenta);
+  border-radius: 5px;
+  padding: 20px;
+  width: 286px;
+    height: 180px;
+}
+
+.card__2{
+  margin-top: 10px;
+}
+
+.card__3{
+  margin-top: 20px;
+
+}
+
+
+.card__header {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__rol {
+  color: var(--SoftPink);
+}
+
+img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
