@@ -18,7 +18,8 @@ body {
     url(./images/bg-pattern-bottom-desktop.svg);
   background-position: top left, bottom right;
   background-repeat: no-repeat;
-  font-family: 'Spartan', sans-serif;
+  background-size: 45% 46%, 85% 85%;
+  font-family: "Spartan", sans-serif;
   font-size: 15px;
 }
 
@@ -37,12 +38,12 @@ header {
 
 .first-div {
   color: var(--VeryDarkMagenta);
-  padding-right: 50px; 
+  padding-right: 50px;
 }
 
 .first-div__title {
-    margin-bottom: 10px;
-    font-size: 3rem;
+  margin-bottom: 10px;
+  font-size: 3rem;
 }
 
 .first-div__description {
@@ -51,11 +52,12 @@ header {
 }
 
 .ratings {
-    padding-left: 20px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
+
 .rating {
   background-color: var(--LightGrayishMagenta);
   border-radius: 8px;
@@ -74,15 +76,15 @@ header {
 }
 
 .rating__1 {
-    margin-right: 80px;
+  margin-right: 80px;
 }
 
 .rating__2 {
-    margin: 0 40px;
+  margin: 0 40px;
 }
 
 .rating__3 {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .rating__text {
@@ -100,18 +102,16 @@ section {
   border-radius: 5px;
   padding: 20px;
   width: 286px;
-    height: 180px;
+  height: 180px;
 }
 
-.card__2{
+.card__2 {
   margin-top: 10px;
 }
 
-.card__3{
+.card__3 {
   margin-top: 20px;
-
 }
-
 
 .card__header {
   display: flex;
@@ -132,4 +132,60 @@ img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-div {
+    padding: 33px;
+}
+
+  .first-div__title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+
+  .ratings {
+    padding-left: 0;
+  }
+
+  .rating {
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  .rating__1, .rating__2, .rating__3  {
+    margin: 0;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+  }
+
+
 }
